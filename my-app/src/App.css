@@ -4,6 +4,7 @@
 }
 
 body {
+  max-height: 100vh;
   background: linear-gradient(rgb(39, 202, 189), rgb(255, 255, 255));
   background-repeat: no-repeat;
   color: rgb(0, 0, 0);
