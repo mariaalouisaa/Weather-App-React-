@@ -44,8 +44,8 @@ export default function Forecast() {
         <div className="weekly-img img-5">
           <img src={sun} alt="sun" />
         </div>
-        <div class="weekly-low low-5">4°C</div>
-        <div class="weekly-high high-5">11°C</div>
+        <div className="weekly-low low-5">4°C</div>
+        <div className="weekly-high high-5">11°C</div>
       </div>
     </div>
   );
