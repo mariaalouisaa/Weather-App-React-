@@ -1,0 +1,21 @@
+.five-day-container {
+  display: grid;
+  width: 100%;
+  height: 130px;
+  grid-template-columns: repeat(5, 70px);
+  gap: 15px;
+  justify-content: center;
+}
+
+.column {
+  border: 1.5px solid #cbc9ed;
+  border-radius: 13px;
+  background-color: #fff;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px 5px;
+}
+
+img {
+  width: 50px;
+}
