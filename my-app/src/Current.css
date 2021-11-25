@@ -1,0 +1,32 @@
+.main-image {
+  width: 30%;
+  position: absolute;
+  left: 5%;
+  top: 25px;
+  opacity: 90%;
+}
+.rotate {
+  animation: rotation 25s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.search-container {
+  position: absolute;
+  top: 40px;
+  right: 10%;
+  z-index: 1;
+  text-align: right;
+}
+
+.search-bar {
+  max-width: 180px;
+  border-radius: 13px;
+  border: 1.5px solid rgb(255, 255, 255);
+}

@@ -1,3 +1,73 @@
 .App {
+  font-family: sans-serif;
   text-align: center;
+}
+
+body {
+  background: linear-gradient(rgb(39, 202, 189), rgb(255, 255, 255));
+  background-repeat: no-repeat;
+  color: rgb(0, 0, 0);
+  height: 100vh;
+  padding-top: 150px;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 500px) {
+  .main-image {
+    width: 35%;
+    left: -2%;
+    top: 10px;
+  }
+  .five-day-container {
+    grid-template-columns: repeat(5, 65px);
+    padding: 2px 0;
+    gap: 4px;
+  }
+}
+
+@media (max-width: 425px) {
+  .main-image {
+    width: 35%;
+  }
+}
+
+@media (max-width: 375px) {
+  .column {
+    font-size: 12px;
+  }
+  img {
+    width: 45px;
+  }
+  .main-image {
+    width: 150px;
+  }
+  .five-day-container {
+    grid-template-columns: repeat(5, 55px);
+    padding: 1px 0;
+  }
+  .search-bar {
+    max-width: 150px;
+  }
+  .current-link {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  h1 {
+    font-size: 28px;
+    padding-top: 15px;
+  }
+  .search-bar {
+    padding: 0;
+    border: none;
+    max-width: 120px;
+  }
 }
