@@ -1,13 +1,15 @@
-import sun from "./images/sun.png";
 import "./App.css";
+import Search from "./Search";
+import Current from "./Current";
+import Forecast from "./Forecast";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={sun} className="App-logo" alt="logo" />
-        <p>WEATHER APP</p>
-      </header>
+      <p>WEATHER APP</p>
+      <Search />
+      <Current />
+      <Forecast />
     </div>
   );
 }
