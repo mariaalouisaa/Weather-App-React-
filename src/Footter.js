@@ -5,6 +5,7 @@ export default function Footer() {
       <a
         href="https://github.com/mariaalouisaa/Weather-App-React-"
         target="_blank"
+        rel="noreferrer"
       >
         GitHub
       </a>

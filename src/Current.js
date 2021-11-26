@@ -10,15 +10,11 @@ export default function Current() {
 
   return (
     <div className="Current">
-      <img
-        src={sun}
-        className="main-image rotate"
-        alt="animated weather image"
-      />
+      <img src={sun} className="main-image rotate" alt="animated weather" />
       <div className="current-temp-items">
         <h1>{cityInfo.city}</h1>
         <h2>
-          <span role="img" aria-label="loading">
+          <span role="loading" aria-label="loading">
             ⏳
           </span>
         </h2>
