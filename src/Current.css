@@ -25,7 +25,7 @@ h4 {
   position: absolute;
   left: 5%;
   top: 25px;
-  z-index: 15;
+  z-index: 25;
 }
 .rotate {
   animation: rotation 25s infinite linear;
