@@ -14,7 +14,7 @@ export default function Current() {
       <div className="current-temp-items">
         <h1>{cityInfo.city}</h1>
         <h2>
-          <span role="loading" aria-label="loading">
+          <span role="icon" aria-label="loading">
             ⏳
           </span>
         </h2>
