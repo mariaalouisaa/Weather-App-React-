@@ -1,6 +1,13 @@
+h1,
+h2,
+h3,
+h4 {
+  margin: 5px auto;
+  font-weight: 200;
+}
+
 h1 {
   font-size: 35px;
-  font-weight: 500px;
   text-transform: capitalize;
 }
 h2 {
@@ -11,21 +18,14 @@ h3 {
 }
 h4 {
   font-size: 12px;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  margin-bottom: 4px;
+  margin-bottom: 50px;
 }
 
 .buttonUnclicked {
   font-size: 14px;
   font-weight: 500;
-  padding: 0 5px;
   color: rgb(99, 99, 99);
-  padding: 2px 5px;
+  padding: 5px 7px;
   border: none;
   border-radius: 5px;
   background-color: transparent;
@@ -35,9 +35,9 @@ h4 {
   background-color: rgba(99, 99, 99, 0.5);
   color: white;
   font-size: 14px;
-  padding: 2px 5px;
+  padding: 5px 7px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .main-image {
