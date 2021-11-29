@@ -8,6 +8,7 @@ export default function Search() {
           type="text"
           placeholder="   Change city"
           className="search-bar"
+          autoFocus="on"
         />
       </form>
       <div href="#" className="current-link">

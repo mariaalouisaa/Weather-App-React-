@@ -2,7 +2,7 @@ import "./App.css";
 import Search from "./Search";
 import Current from "./Current";
 import Forecast from "./Forecast";
-import Footer from "./Footter";
+import Footer from "./Footer";
 
 function App() {
   return (
