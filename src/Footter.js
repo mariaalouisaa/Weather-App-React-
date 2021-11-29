@@ -7,8 +7,8 @@ export default function Footer() {
         target="_blank"
         rel="noreferrer"
       >
-        GitHub{" "}
-      </a>
+        GitHub
+      </a>{" "}
       and hosted on{" "}
       <a
         href="https://jolly-kirch-7434c0.netlify.app/"

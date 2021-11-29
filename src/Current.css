@@ -45,6 +45,7 @@ h4 {
   position: absolute;
   left: 5%;
   top: 25px;
+  opacity: 0.9;
 }
 .rotate {
   animation: rotation 25s infinite linear;
