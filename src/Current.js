@@ -21,19 +21,25 @@ export default function Current(stats) {
       </div>
     );
   } else {
-    console.log(stats.data.data.dt * 1000);
+    console.log(stats.data);
     let cityInfo = {
       city: stats.data.data.name,
       temp: Math.round(stats.data.data.main.temp),
-      time: "12:00",
+      country: stats.data.data.sys.country,
+      description: stats.data.data.weather[0].description,
+      icon: "",
     };
 
     return (
       <div className="Current">
-        <img src={sun} className="main-image rotate" alt="animated weather" />
+        <img src={sun} className="main-image pulse" alt="animated weather" />
         <div className="current-temp-items">
-          <h1>{cityInfo.city}</h1>
-          <h2>{cityInfo.temp}°C </h2>
+          <h1>
+            {cityInfo.city}
+            <span className="smaller">, {cityInfo.country}</span>
+          </h1>
+          <p className="smaller">{cityInfo.description}</p>
+          <h2>{cityInfo.temp}°</h2>
           <div>
             <button type="button" className="celciusButton buttonClicked">
               °C

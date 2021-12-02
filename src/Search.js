@@ -22,6 +22,12 @@ export default function Search() {
       setStats(response);
     }
   }
+
+  function getCurrent(event) {
+    event.preventDefault();
+    console.log("clicked");
+  }
+
   return (
     <div>
       <div className="search-container">
@@ -34,7 +40,7 @@ export default function Search() {
             onChange={getCity}
           />
         </form>
-        <div href="#" className="current-link">
+        <div className="current-link" onClick={getCurrent}>
           Current location{" "}
           <span role="img" aria-label="pin">
             📍

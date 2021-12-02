@@ -30,7 +30,7 @@ export default function TimeAndDate() {
         {hour}:{minute}
       </h3>
       <h4>
-        {date}/{month}/{year}
+        {date}-{month}-{year}
       </h4>
     </div>
   );

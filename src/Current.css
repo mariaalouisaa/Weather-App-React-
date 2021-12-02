@@ -2,7 +2,7 @@ h1,
 h2,
 h3,
 h4 {
-  margin: 5px auto;
+  margin: 2px auto 0 auto;
   font-weight: 200;
 }
 
@@ -19,6 +19,13 @@ h3 {
 h4 {
   font-size: 12px;
   margin-bottom: 50px;
+}
+
+.smaller {
+  font-size: 18px;
+  line-height: 16px;
+  text-transform: capitalize;
+  margin: 0;
 }
 
 .buttonUnclicked {
@@ -41,20 +48,23 @@ h4 {
 }
 
 .main-image {
-  width: 30%;
+  width: 25%;
   position: absolute;
   left: 5%;
   top: 25px;
   opacity: 0.9;
 }
-.rotate {
-  animation: rotation 25s infinite linear;
+.pulse {
+  animation: pulse 9s ease-in-out infinite;
 }
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
   }
-  to {
-    transform: rotate(359deg);
+  70% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.8);
   }
 }

@@ -9,9 +9,14 @@ body {
   background-repeat: no-repeat;
   color: rgb(0, 0, 0);
   height: 100vh;
-  padding-top: 150px;
+  padding-top: 120px;
   margin: 0 auto;
   font-family: "Roboto", sans-serif;
+}
+
+.night-bg {
+  background: linear-gradient(rgb(3, 9, 58), rgb(255, 255, 255));
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 768px) {
