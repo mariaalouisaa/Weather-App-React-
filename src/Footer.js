@@ -2,7 +2,7 @@ import "./Footer.css";
 
 export default function Footer() {
   return (
-    <div classNmae="Footer">
+    <div className="Footer">
       <p>
         Coded by Maria Castro. Open Sourced on{" "}
         <a
