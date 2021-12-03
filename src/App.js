@@ -7,7 +7,7 @@ import Footer from "./Footer";
 function App() {
   return (
     <div className="App">
-      <Search city={"oaxaca"} />
+      <Search />
       <TimeAndDate />
       <Forecast />
       <Footer />
