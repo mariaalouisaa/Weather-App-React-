@@ -3,24 +3,22 @@ import axios from "axios";
 import Current from "./Current";
 import "./Search.css";
 
-export default function Search() {
+export default function Search(props) {
   const [city, setCity] = useState("");
   const [stats, setStats] = useState("");
-  let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=a48984de2e1866778622568cbcb97ff1&units=metric`;
+
+  function handleSubmit(event) {
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=a48984de2e1866778622568cbcb97ff1&units=metric`;
+    event.preventDefault();
+    axios.get(url).then(showStats);
+  }
 
   function getCity(event) {
     setCity(event.target.value);
   }
 
-  function handleSubmit(event) {
-    event.preventDefault();
-    axios.get(url).then(showStats);
-  }
-
   function showStats(response) {
-    if (response) {
-      setStats(response);
-    }
+    setStats(response);
   }
 
   function getCurrent(event) {

@@ -1,15 +1,14 @@
 import Clear from "./images/Clear.png";
-import Clouds from "./images/Clouds.png";
+import MainImage from "./MainImage";
 import "./Current.css";
 
 export default function Current(stats) {
   if (stats.data.data === undefined) {
     return (
       <div className="Current">
-        <img src={Clear} className="main-image pulse" alt="animated weather" />
+        <img src={Clear} className="main-image pulse" alt="weather image" />
         <div className="current-temp-items">
-          <h1>--</h1>
-          <h2>--°</h2>
+          <h1 className="loader">⏳</h1>
           <div>
             <button type="button" className="celciusButton buttonClicked">
               °C
@@ -30,16 +29,9 @@ export default function Current(stats) {
       icon: stats.data.data.weather[0].main,
     };
 
-    let image = `./images/${cityInfo.icon}.png`;
-
-    console.log(cityInfo.icon);
     return (
       <div className="Current">
-        <img
-          src={image}
-          className="main-image pulse"
-          alt={cityInfo.description}
-        />
+        <MainImage icon={cityInfo.icon} />
         <div className="current-temp-items">
           <h1>
             {cityInfo.city}
