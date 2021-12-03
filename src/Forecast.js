@@ -1,6 +1,6 @@
-import sun from "./images/sun.png";
+import Clear from "./images/Clear.png";
 import rain from "./images/rain.png";
-import cloud from "./images/cloud.png";
+import Clouds from "./images/Clouds.png";
 
 import "./Forecast.css";
 
@@ -10,7 +10,7 @@ export default function Forecast() {
       <div className="column">
         <div className="weekly-head day-1">Mon</div>
         <div className="weekly-img img-1">
-          <img src={sun} alt="sun" />
+          <img src={Clear} alt="Clear" />
         </div>
         <div className="weekly-low low-1">4°C</div>
         <div className="weekly-high high-1">16°C</div>
@@ -26,7 +26,7 @@ export default function Forecast() {
       <div className="column">
         <div className="weekly-head day-3">Wed</div>
         <div className="weekly-img img-3">
-          <img src={cloud} alt="cloud" />
+          <img src={Clouds} alt="Clouds" />
         </div>
         <div className="weekly-low low-3">5°C</div>
         <div className="weekly-high high-3">14°C</div>
@@ -42,7 +42,7 @@ export default function Forecast() {
       <div className="column">
         <div className="weekly-head day-5">Fri</div>
         <div className="weekly-img img-5">
-          <img src={sun} alt="sun" />
+          <img src={Clear} alt="Clear" />
         </div>
         <div className="weekly-low low-5">4°C</div>
         <div className="weekly-high high-5">11°C</div>
