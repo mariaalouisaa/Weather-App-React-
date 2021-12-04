@@ -6,7 +6,7 @@ export default function Current(stats) {
   if (stats.data.data === undefined) {
     return (
       <div className="Current">
-        <img src={Clear} className="main-image pulse" alt="weather image" />
+        <img src={Clear} className="main-image pulse" alt="sun" />
         <div className="current-temp-items">
           <h1 className="loader">⏳</h1>
           <div>

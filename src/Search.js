@@ -3,7 +3,7 @@ import axios from "axios";
 import Current from "./Current";
 import "./Search.css";
 
-export default function Search(props) {
+export default function Search() {
   const [city, setCity] = useState("");
   const [stats, setStats] = useState("");
 
