@@ -1,5 +1,6 @@
 import Clear from "./images/Clear.png";
 import MainImage from "./MainImage";
+import MainTemp from "./MainTemp";
 import "./Current.css";
 
 export default function Current(stats) {
@@ -38,15 +39,7 @@ export default function Current(stats) {
             <span className="smaller">, {cityInfo.country}</span>
           </h1>
           <p className="smaller">{cityInfo.description}</p>
-          <h2>{cityInfo.temp}°</h2>
-          <div>
-            <button type="button" className="celciusButton buttonClicked">
-              °C
-            </button>
-            <button type="button" className="farenButton buttonUnclicked">
-              °F
-            </button>
-          </div>
+          <MainTemp temp={cityInfo.temp} />
         </div>
       </div>
     );
