@@ -3,6 +3,7 @@ import MainImage from "./MainImage";
 import MainTemp from "./MainTemp";
 import TimeAndDate from "./TimeAndDate";
 import "./Current.css";
+import Forecast from "./Forecast";
 
 export default function Current(stats) {
   if (stats.data.data === undefined) {
@@ -30,6 +31,7 @@ export default function Current(stats) {
       country: stats.data.data.sys.country,
       description: stats.data.data.weather[0].description,
       icon: stats.data.data.weather[0].main,
+      coordinates: stats.data.data.coord,
     };
 
     return (
@@ -43,6 +45,7 @@ export default function Current(stats) {
           <p className="smaller">{cityInfo.description}</p>
           <MainTemp temp={cityInfo.temp} />
           <TimeAndDate />
+          <Forecast coord={cityInfo.coordinates} />
         </div>
       </div>
     );
