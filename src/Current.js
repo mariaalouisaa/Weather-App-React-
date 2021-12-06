@@ -1,6 +1,7 @@
 import Clear from "./images/Clear.png";
 import MainImage from "./MainImage";
 import MainTemp from "./MainTemp";
+import TimeAndDate from "./TimeAndDate";
 import "./Current.css";
 
 export default function Current(stats) {
@@ -19,6 +20,7 @@ export default function Current(stats) {
             </button>
           </div>
         </div>
+        <TimeAndDate />
       </div>
     );
   } else {
@@ -40,6 +42,7 @@ export default function Current(stats) {
           </h1>
           <p className="smaller">{cityInfo.description}</p>
           <MainTemp temp={cityInfo.temp} />
+          <TimeAndDate />
         </div>
       </div>
     );

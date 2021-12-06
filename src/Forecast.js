@@ -1,6 +1,4 @@
 import Clear from "./images/Clear.png";
-import rain from "./images/rain.png";
-import Clouds from "./images/Clouds.png";
 
 import "./Forecast.css";
 
@@ -12,40 +10,8 @@ export default function Forecast() {
         <div className="weekly-img img-1">
           <img src={Clear} alt="Clear" />
         </div>
-        <div className="weekly-low low-1">4°C</div>
-        <div className="weekly-high high-1">16°C</div>
-      </div>
-      <div className="column">
-        <div className="weekly-head day-2">Tue</div>
-        <div className="weekly-img img-2">
-          <img src={rain} alt="rain" />
-        </div>
-        <div className="weekly-low low-2">2°C</div>
-        <div className="weekly-high high-2">15°C</div>
-      </div>
-      <div className="column">
-        <div className="weekly-head day-3">Wed</div>
-        <div className="weekly-img img-3">
-          <img src={Clouds} alt="Clouds" />
-        </div>
-        <div className="weekly-low low-3">5°C</div>
-        <div className="weekly-high high-3">14°C</div>
-      </div>
-      <div className="column">
-        <div className="weekly-head day-4">Thur</div>
-        <div className="weekly-img img-4">
-          <img src={rain} alt="rain" />
-        </div>
-        <div className="weekly-low low-4">3°C</div>
-        <div className="weekly-high high-4">16°C</div>
-      </div>
-      <div className="column">
-        <div className="weekly-head day-5">Fri</div>
-        <div className="weekly-img img-5">
-          <img src={Clear} alt="Clear" />
-        </div>
-        <div className="weekly-low low-5">4°C</div>
-        <div className="weekly-high high-5">11°C</div>
+        <div className="weekly-low low-1">14°</div>
+        <div className="weekly-high high-1">6°</div>
       </div>
     </div>
   );

@@ -1,4 +1,6 @@
-export default function TimeAndDate() {
+import React, { useState } from "react";
+
+export default function TimeAndDate(props) {
   let now = new Date();
 
   let hour = now.getHours();

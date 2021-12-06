@@ -1,9 +1,6 @@
-.App {
-  font-family: "Roboto", sans-serif;
-  text-align: center;
-}
-
 body {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
   overflow: hidden;
   background: linear-gradient(rgb(39, 202, 189), rgb(255, 255, 255));
   background-repeat: no-repeat;
@@ -11,7 +8,6 @@ body {
   height: 100vh;
   padding-top: 120px;
   margin: 0 auto;
-  font-family: "Roboto", sans-serif;
 }
 
 .night-bg {
