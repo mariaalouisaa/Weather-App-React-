@@ -1,5 +1,4 @@
 import Clear from "./images/Clear.png";
-import MainImage from "./MainImage";
 import MainTemp from "./MainTemp";
 import TimeAndDate from "./TimeAndDate";
 import "./Current.css";
@@ -34,9 +33,13 @@ export default function Current(stats) {
       coordinates: stats.data.data.coord,
     };
 
+    let image = `./images/${cityInfo.icon}.png`;
+
     return (
       <div className="Current">
-        <MainImage icon={cityInfo.icon} />
+        <div className="MainImage">
+          <img src={image} className="main-image pulse" alt={image} />
+        </div>
         <div className="current-temp-items">
           <h1>
             {cityInfo.city}
