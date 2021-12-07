@@ -22,7 +22,7 @@ export default function Forecast(props) {
                 <ForecastDay data={day} />
               </div>
             );
-          } else return "loading...";
+          } else return null;
         })}
       </div>
     );
