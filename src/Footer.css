@@ -5,3 +5,15 @@
   transform: translate(-50%, 0);
   font-size: 12px;
 }
+
+@media (max-width: 768px) {
+  .Footer {
+    bottom: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .Footer {
+    bottom: 4px;
+  }
+}

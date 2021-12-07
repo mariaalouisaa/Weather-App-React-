@@ -19,6 +19,10 @@ body {
   body {
     padding-top: 100px;
   }
+
+  .Footer {
+    bottom: 10px;
+  }
 }
 
 @media (max-width: 500px) {
