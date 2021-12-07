@@ -1,4 +1,7 @@
-p {
+.Footer {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translate(-50%, 0);
   font-size: 12px;
-  padding-top: 10px;
 }
