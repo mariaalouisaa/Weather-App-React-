@@ -15,21 +15,15 @@ export default function Forecast(props) {
   if (loaded) {
     return (
       <div className="five-day-container">
-        <div className="column">
-          <ForecastDay data={forecast[0]} />
-        </div>
-        <div className="column">
-          <ForecastDay data={forecast[1]} />
-        </div>
-        <div className="column">
-          <ForecastDay data={forecast[2]} />
-        </div>
-        <div className="column">
-          <ForecastDay data={forecast[3]} />
-        </div>
-        <div className="column">
-          <ForecastDay data={forecast[4]} />
-        </div>
+        {forecast.map((day, index) => {
+          if (index < 5) {
+            return (
+              <div className="column">
+                <ForecastDay data={day} />
+              </div>
+            );
+          }
+        })}
       </div>
     );
   } else {
