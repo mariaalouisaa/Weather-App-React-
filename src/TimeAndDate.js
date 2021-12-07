@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-
 export default function TimeAndDate(props) {
   let now = new Date();
 
