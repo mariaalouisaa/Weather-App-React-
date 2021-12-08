@@ -41,7 +41,7 @@ export default function Search() {
     navigator.geolocation.getCurrentPosition(callGpsApi);
   }
 
-  //getCurrent();
+  getCurrent();
 
   return (
     <div>
