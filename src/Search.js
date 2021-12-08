@@ -6,9 +6,11 @@ import "./Search.css";
 export default function Search() {
   const [city, setCity] = useState("");
   const [stats, setStats] = useState("");
+  let apiFront = "https://api.openweathermap.org/data/2.5/weather?";
+  let apiKey = "a48984de2e1866778622568cbcb97ff1";
 
   function handleSubmit(event) {
-    let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=a48984de2e1866778622568cbcb97ff1&units=metric`;
+    let url = `${apiFront}q=${city}&appid=${apiKey}&units=metric`;
     event.preventDefault();
     axios.get(url).then(showStats);
   }
@@ -21,11 +23,22 @@ export default function Search() {
     setStats(response);
   }
 
-  function getCurrent(event) {
-    event.preventDefault();
-    console.log("clicked");
+  function displayGpsStats(response) {
+    setStats(response);
   }
 
+  function callGpsApi(position) {
+    let lat = position.coords.latitude;
+    let long = position.coords.longitude;
+    axios
+      .get(`${apiFront}lat=${lat}&lon=${long}&appid=${apiKey}&units=metric`)
+      .then(displayGpsStats);
+  }
+
+  function getCurrent() {
+    console.log("clicked");
+    navigator.geolocation.getCurrentPosition(callGpsApi);
+  }
   return (
     <div>
       <div className="search-container">
