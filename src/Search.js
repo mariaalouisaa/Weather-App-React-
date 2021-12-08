@@ -23,13 +23,12 @@ export default function Search() {
     setStats(response);
   }
 
-  /*function displayGpsStats(response) {
-    console.log(response);
+  function displayGpsStats(response) {
     setStats(response);
   }
-  
- function callGpsApi(position) {
-  let apiFront = "https://api.openweathermap.org/data/2.5/weather?";
+
+  function callGpsApi(position) {
+    let apiFront = "https://api.openweathermap.org/data/2.5/weather?";
     let apiKey = "a48984de2e1866778622568cbcb97ff1";
     let lat = position.coords.latitude;
     let long = position.coords.longitude;
@@ -37,10 +36,9 @@ export default function Search() {
       .get(`${apiFront}lat=${lat}&lon=${long}&appid=${apiKey}&units=metric`)
       .then(displayGpsStats);
   }
-*/
+
   function getCurrent() {
-    console.log("clicked");
-    // navigator.geolocation.getCurrentPosition(callGpsApi);
+    navigator.geolocation.getCurrentPosition(callGpsApi);
   }
 
   //getCurrent();
