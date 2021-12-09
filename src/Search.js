@@ -41,8 +41,6 @@ export default function Search() {
     navigator.geolocation.getCurrentPosition(callGpsApi);
   }
 
-  getCurrent();
-
   return (
     <div>
       <div className="search-container">
