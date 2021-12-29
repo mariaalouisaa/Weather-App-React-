@@ -1,3 +1,9 @@
+My first React Project a fully functioning weather app.
+
+Hosted on Netflify https://adoring-shaw-8350a4.netlify.app/
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
