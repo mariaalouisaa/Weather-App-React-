@@ -1,6 +1,19 @@
-My first React Project a fully functioning weather app.
+## My first React Project: A fully functioning weather app!
 
-Hosted on Netflify https://adoring-shaw-8350a4.netlify.app/
+Made with API from [OpenWeatherMap](https://openweathermap.org/)
+
+Features include:
+- Live date and time
+- Ability to use geolocation to locate current city for a search
+- Funtionality to switch between celicuis and fahrenheit
+- A 5 day forecast
+- Animated images
+- Responsive design
+
+
+<img width="467" alt="weather" src="https://user-images.githubusercontent.com/82417131/150444188-6c22ca4d-5b71-4eaa-87b8-6322e865b2cc.png">
+
+Hosted on [Netflify](https://adoring-shaw-8350a4.netlify.app/)
 
 
 
