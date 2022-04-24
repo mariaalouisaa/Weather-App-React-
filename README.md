@@ -1,6 +1,6 @@
 # My first React Project: A fully functioning weather app!
 
-Made with a free API from [OpenWeatherMap](https://openweathermap.org/) and Axios.js
+Made with a free API from [OpenWeatherMap](https://openweathermap.org/) and Axios.js and react-create-app
 
 ---
 
